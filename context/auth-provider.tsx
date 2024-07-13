@@ -2,7 +2,6 @@ import { useToast } from "@/components/ui/use-toast"
 import { AuthContext } from "./auth-context";
 import { useEffect, useState } from "react";
 import { Web3 } from "web3";
-import { ToastAction } from "@/components/ui/toast";
 
 export default function AuthProvider({ children }: any) {
     const { toast } = useToast()
@@ -11,11 +10,11 @@ export default function AuthProvider({ children }: any) {
 
     useEffect(() => {
         // ensure that there is an injected the Ethereum provider
-        if (window.ethereum) {
+        if (window?.ethereum) {
             // use the injected Ethereum provider to initialize Web3.js
-            setWeb3(new Web3(window.ethereum));
+            setWeb3(new Web3(window?.ethereum));
             // check if Ethereum provider comes from MetaMask
-            if (window.ethereum.isMetaMask) {
+            if (window?.ethereum?.isMetaMask) {
                 toast({
                     description: "Connected to Ethereum with MetaMask.",
                 })
@@ -61,7 +60,7 @@ export default function AuthProvider({ children }: any) {
         }
 
         // request accounts from MetaMask
-        await window.ethereum.request({ method: "eth_requestAccounts" });
+        await window?.ethereum?.request({ method: "eth_requestAccounts" });
 
         // get list of accounts
         const allAccounts = await web3.eth.getAccounts();
