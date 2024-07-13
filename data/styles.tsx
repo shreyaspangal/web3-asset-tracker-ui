@@ -1,0 +1,1 @@
+export const CARD_OUTLINE_STYLES = "rounded-[var(--card-radius)] border-[1px] border-[var(--border)]";
