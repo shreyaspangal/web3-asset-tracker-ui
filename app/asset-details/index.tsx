@@ -73,7 +73,7 @@ export default function Home() {
                 <section className="grid grid-cols-1 lg:grid-cols-3 gap-[16px]">
                     {
                         SUB_CARDS_DATA.map((card: any, index: number) => (
-                            <SubCard data={card} />
+                            <SubCard key={card.id} data={card} />
                         ))
                     }
                 </section>

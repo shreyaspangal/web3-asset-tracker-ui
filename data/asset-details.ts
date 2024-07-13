@@ -11,7 +11,7 @@ export const TABS = [
     { id: 2, label: "Borrow", value: "borrow" },
     // { id: 3, label: "Withdraw", value: "withdraw" },
     // { id: 4, label: "Repay", value: "repay" },
-    { id: 5, label: "Unwind", value: "unwind" },
+    { id: 3, label: "Unwind", value: "unwind" },
 ]
 
 export const DEPOSIT_SUMMARY = [
