@@ -79,5 +79,12 @@ export const SUB_CARDS_DATA = [
             },
         ]
     },
+];
+
+export const COINS_LIST = [
+    { id: 1, symbol: "weETH", title: "Wrapped eETH", },
+    { id: 2, symbol: "gmBTC-USD", title: "gmBTC-USD", },
+    { id: 3, symbol: "gmETH-USD", title: "gmETH-USD", },
+    { id: 4, symbol: "USDT", title: "USD Coin", }
 ]
 
