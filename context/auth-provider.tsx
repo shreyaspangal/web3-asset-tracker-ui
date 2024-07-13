@@ -36,6 +36,7 @@ export default function AuthProvider({ children }: any) {
                     description: "Non-MetaMask Ethereum provider detected.",
                 })
                 console.error("Non-MetaMask Ethereum provider detected")
+                setAccounts(null);
             }
         } else {
             // no Ethereum provider - instruct user to install MetaMask
@@ -45,6 +46,7 @@ export default function AuthProvider({ children }: any) {
                 description: "Please install MetaMask",
             })
             console.error("MetaMask not found!");
+            setAccounts(null);
         }
     }, []);
 
