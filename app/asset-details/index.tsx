@@ -77,7 +77,7 @@ function CoinsDropdown() {
             <DropdownMenuContent sideOffset={0} className="w-[85vw] sm:w-[95vw] lg:w-[350px] rounded-[var(--card-radius)] border-[var(--border)]">
                 {
                     COINS_LIST.map((coin, index) => (
-                        <DropdownMenuItem className="cursor-pointer hover:bg-[var(--muted)] focus:bg-[var(--muted)] rounded-[var(--card-radius)] py-3">
+                        <DropdownMenuItem key={coin.id} className="cursor-pointer hover:bg-[var(--muted)] focus:bg-[var(--muted)] rounded-[var(--card-radius)] py-3">
                             <div key={coin.id} className="flex items-center justify-between gap-2 w-full">
                                 <div className="flex items-center gap-2">
                                     <Image alt="Eth coin" src="/images/coins/eth-coin.svg" width={24} height={24} />

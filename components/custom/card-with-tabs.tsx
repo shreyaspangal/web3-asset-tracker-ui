@@ -68,7 +68,7 @@ function DepositTabContent({ sliderValue, handleSliderValueChange }: any) {
                 <p className="mb-0 text-[var(--muted-foreground)] text-[0.88rem]">
                     Increase the yield potential of your
                     tokens with up to 4x leverage.
-                    This process deposits a user's tokens and automatically borrows against them,
+                    This process deposits a user&apos;s tokens and automatically borrows against them,
                     repeating these steps until your desired amount of leverage is acquired.
                 </p>
             </div>
